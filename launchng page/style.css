@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    
+}
+header img{
+    width: 59px;
+    height: 60px;
+    margin-top: 4px;
+}
+    
+header h4{
+    margin-left: 11px;
+    font-size: 16px;
+}
+main {
+    padding: 10px;
+    color: antiquewhite;
+}
+
+#video-container {
+    max-width: 800px;
+    margin: -6px auto;
+    display: flex;
+}
+
+video {
+    width: 62%;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+}
+#video-container b{
+    margin-left: 10px;
+    margin-top: 198px   ;
+    font-size: 36px;
+}
+main h1{
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    /* Adjust styles for screens with a maximum width of 767px (e.g., tablets and mobile devices) */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width:      14%; /* Adjust image width for smaller screens */
+    }
+
+    header h4 {
+        margin-left: 0;
+        margin-top: 10px; /* Add margin to separate image and text */
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    #video-container {
+        flex-direction: column; /* Stack video and text vertically */
+        align-items: center;
+    }
+
+    video {
+        width: 100%; /* Full width for smaller screens */
+        margin-right: 0;
+    }
+
+    #video-container b {
+        margin-top: 20px; /* Adjust top margin for smaller screens */
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+}
